@@ -26,6 +26,7 @@ const Main = ({ activeNote, onUpdateNote }) => {
 				/>
 				<textarea
 					id="content"
+					value={activeNote.content}
 					placeholder="ノート内容を記入"
 					onChange={(e) => onEditNote("content", e.target.value)}
 				></textarea>
